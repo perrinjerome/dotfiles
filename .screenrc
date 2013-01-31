@@ -1,0 +1,12 @@
+vbell off
+termcapinfo xterm ti@:te@
+escape ^Qq
+autodetach on
+startup_message off
+# advertise hardstatus support to $TERMCAP
+termcapinfo  * '' 'hs:ts=\E_:fs=\E\\:ds=\E_\E\\'
+defscrollback 50000
+verbose on
+defutf8 on
+altscreen on
+caption always "%{wk} %c %{dd} %{-b dd}%-w%{+b B.}%n* %t%{-}%+w%< [load: %l]"
