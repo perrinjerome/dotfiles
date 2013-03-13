@@ -1,0 +1,6 @@
+include "/usr/share/themes/Emacs/gtk-2.0-key/gtkrc"
+
+gtk-can-change-accels = 1
+gtk-key-theme-name = "Emacs"
+gtk-icon-theme-name = "Tango"
+
