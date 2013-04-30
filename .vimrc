@@ -149,6 +149,7 @@ au BufRead,BufNewFile *.tex  map <F5> :!latex %<CR>
 au BufRead,BufNewFile *.tex  map <F6> :!bibtex rapport<CR>
 au BufRead,BufNewFile *.tex  map <F7> :!pdflatex %<CR>
 
+au BufRead,BufNewFile */bt/*  set noeol binary
 
 au BufRead,BufNewFile *.po  map <F9> :!curl -u ERP5TypeTestCase: -F file=@% -F lang=fr http://localhost:9089/erp5/Localizer/erp5_ui/manage_import<CR>
 au BufRead,BufNewFile *.po  map <F10> :!curl -u zope:zope -F file=@% -F lang=fr http://localhost:18080/erp5/Localizer/erp5_content/manage_import<CR>
